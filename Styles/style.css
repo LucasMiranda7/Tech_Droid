@@ -3,15 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
-  font-family: "Idroid" ;
-  src: url(../fontes/idroid.otf);
-  src: url(../fontes/idroid.otf) format(-opentype);
+  font-family: "Idroid";
+  src: url(../fontes/IDroid.otf);
+  src: url(../fontes/IDroid.otf) format(-opentype);
 }
 
 :root {
-    --cor-de-fundo: #c5ebd6;
-    --cor-secundaria: #1b5c3c;
-    --cor-terciaria: #3fdb90;
+    --cor1: #84E1AD ;
+    --cor2: #1A5C38 ;
+    --cor3: #1a6e3e;
+    --cor4: #39CE7C;
+    --cor5: #1a5c37;
+    --cor6: #EFF8F3;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-primaria: "Idroid", sans-serif;
     --fonte-secundaria: "Bebas Neue", sans-serif;
 }
@@ -23,6 +28,73 @@
 }
 
 body {
-  background-color: var(--cor-de-fundo);
+  background-color: var(--cor1);
   height: 100vh;
 }
+
+.cabecalho_tech {
+  background-image: linear-gradient(var(--cor4), var(--cor5), var(--cor2) );
+  color: var(--cor6);
+  min-height: 180px;
+  padding-top: 1.7em;
+  text-align: center;
+}
+
+.cabecalho_tech > h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  color: #EFF8F3;
+}
+
+.cabecalho_tech > p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 1.5em;
+}
+
+.menu-tech {
+  text-align: left;
+  transform: translateY(30px);
+  padding-left: 7px;
+}
+
+.menu-tech > a {
+  padding: 6px;
+  color: var(--cor6);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.menu-tech > a:hover {
+  background-color:var(--cor3);
+  color: var(--cor1);
+  border-radius: 5px;
+  text-decoration: underline;
+  transition: 200ms;
+}
+
+.conteudo_tech {
+  background-color: var(--cor6);
+  max-width: 1100px;
+  margin:  auto;
+  border-radius: 2px;
+  box-shadow: 1px 1px 7px black;
+}
+
+.textfield_tech {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 1.5em;
+}
+
+.textfield_tech > h2 {
+  color: var(--cor5);
+  font-family: "Idroid";
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
