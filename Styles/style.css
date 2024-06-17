@@ -162,17 +162,15 @@ body {
  background-color: var(--cor2);
  padding: 20px;
  padding-bottom: 50%;
- position: relative;
- 
+ position: relative; 
 } 
 
 .Android_video > iframe {
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 5%; 
+  left: 5%; 
   width: 90%;
   height: 90%;
-
 }
 
 .sobre_mais_tech {
@@ -220,4 +218,11 @@ body {
   text-align: center;
   padding: 5px;
   margin-top: 12px;
+}
+
+
+@media (min-width:300px) and (max-width: 800px) {
+  .primeiro_tech > h2 {
+    font-size: 16px;
+  }
 }
