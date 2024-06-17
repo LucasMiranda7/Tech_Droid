@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: "Idroid";
-  src: url(../fontes/IDroid.otf);
-  src: url(../fontes/IDroid.otf) format(-opentype);
+  src: url(../fonts/IDroid.otf);
+  src: url(../fonts/IDroid.otf) format(-opentype);
 }
 
   /* Cores */
