@@ -8,6 +8,7 @@
   src: url(../fontes/IDroid.otf) format(-opentype);
 }
 
+  /* Cores */
 :root {
     --cor1: #84E1AD ;
     --cor2: #1A5C38 ;
@@ -16,6 +17,7 @@
     --cor5: #1a5c37;
     --cor6: #EFF8F3;
     
+    /* Fontes */
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-primaria: "Idroid", sans-serif;
     --fonte-secundaria: "Bebas Neue", sans-serif;
@@ -32,6 +34,8 @@ body {
   height: 100vh;
   font-family: var(--fonte-padrao);
 }
+
+/* Cabeçalho */
 
 .cabecalho_tech {
   background-image: linear-gradient(var(--cor4), var(--cor5), var(--cor2) );
@@ -54,6 +58,8 @@ body {
   padding-top: 1.5em;
 }
 
+/* Menu */
+
 .menu-tech {
   text-align: left;
   transform: translateY(30px);
@@ -73,7 +79,10 @@ body {
   border-radius: 5px;
   text-decoration: underline;
   transition: 200ms;
+  cursor: pointer;
 }
+
+/* Config Conteudo Geral */
 
 
 .conteudo_tech {
@@ -90,6 +99,8 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+/* Parte 1 */
 
 .primeiro_tech {
   padding: 1em 1.5em;
@@ -115,6 +126,8 @@ body {
   text-decoration: none;
 }
 
+/* Parte 2 */
+
 .segunda_tech {
   padding: 2em 1.5em;
 }
@@ -132,6 +145,8 @@ body {
    text-indent: 30px;
    margin-top: 10px;
 }
+
+/* Parte 3 */
 
 .terceira_tech {
   padding: 2em 1.5em;
@@ -151,12 +166,16 @@ body {
   margin-top: 10px;
 }
 
+/* Config Imagens */
+
 
 .Imagens_tech {
    display: flex;
    justify-content: center;
    padding-top: 1em;
 }
+
+/* Config Video */
 
 .Android_video{
  background-color: var(--cor2);
@@ -172,6 +191,8 @@ body {
   width: 90%;
   height: 90%;
 }
+
+/* Parte 4  */
 
 .sobre_mais_tech {
   background-color: var(--cor1);
@@ -212,12 +233,37 @@ body {
   margin: 2em;
 }
 
+/* Footer /Rodapé */
+
 .rodape {
   background-color: var(--cor2);
   color: var(--cor6);
   text-align: center;
   padding: 5px;
   margin-top: 12px;
+}
+
+
+/* Responsividade */
+
+ @media (max-width: 320px) { /*Celulares Pequenos */
+
+  .cabecalho_tech > p {
+    margin: 12px;
+    font-size: 14px;
+    padding-top: 1em;
+  }
+
+  .menu-tech {
+    display: flex;
+    transform: translate(1px);
+  }
+  
+  .menu-tech > a {
+    padding: 4px;
+    font-size: 14px;
+  }
+  
 }
 
 
