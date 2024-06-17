@@ -100,6 +100,13 @@ body {
   justify-content: center;
 }
 
+.textfield_tech  p {
+  color: black;
+  font-size: 16px;
+  padding: 12px 0 12px 10px;
+  text-indent: 30px;
+}
+
 /* Parte 1 */
 
 .primeiro_tech {
@@ -107,18 +114,12 @@ body {
 }
 
 
-.primeiro_tech > h2{
+.primeiro_tech > h1{
   color: var(--cor5);
   font-family: var(--fonte-primaria);
-  font-size: 35px;
+  font-size: 27px;
 }
 
-.primeiro_tech > p {
-  color: black;
-  font-size: 16px;
-  padding-top: 12px;
-  text-indent: 30px;
-}
 
 .tech_destaque { 
   color: var(--cor3);
@@ -132,18 +133,11 @@ body {
   padding: 2em 1.5em;
 }
 
-.segunda_tech > h3 { 
+.segunda_tech > h2 { 
   font-family: var(--fonte-primaria);
   font-size: 22px;
   color: var(--cor3);
   background-image: linear-gradient(to right, var(--cor1), var(--cor6));
-}
-
-.segunda_tech > p {
-   font-size: 16px;
-   text-align: justify;
-   text-indent: 30px;
-   margin-top: 10px;
 }
 
 /* Parte 3 */
@@ -152,19 +146,13 @@ body {
   padding: 2em 1.5em;
 }
 
-.terceira_tech > h3 {
+.terceira_tech > h2 {
   font-family: var(--fonte-primaria);
   font-size: 22px;
   color: var(--cor3);
   background-image: linear-gradient(to right, var(--cor1), var(--cor6));
 }
 
-.terceira_tech > p {
-  font-size: 16px;
-  text-align: justify;
-  text-indent: 30px;
-  margin-top: 10px;
-}
 
 /* Config Imagens */
 
@@ -202,7 +190,7 @@ body {
   padding: 1em;
 }
 
-.sobre_mais_tech > h4 {
+.sobre_mais_tech > h3 {
   background-color: var(--cor3);
   color: var(--cor6);
   font-size: 14px;
@@ -213,11 +201,8 @@ body {
 }
 
 .sobre_mais_tech > p {
-  font-size: 16px;
-  text-align: justify;
-  text-indent: 30px;
-  padding-top: 2em;
-}
+  padding-top: 2em; 
+} 
 
 .lista_tech {
   padding-top: 1em;
@@ -226,12 +211,6 @@ body {
   columns: 2;
 }
 
-.despede_tech {
-  font-size: 16px;
-  text-align: justify;
-  text-indent: 20px;
-  margin: 2em;
-}
 
 /* Footer /Rodapé */
 
@@ -243,10 +222,15 @@ body {
   margin-top: 12px;
 }
 
+.rodape a {
+ text-decoration: none;
+ color: var(--cor6);
+}
 
 /* Responsividade */
 
  @media (max-width: 320px) { /*Celulares Pequenos */
+
 
   .cabecalho_tech > p {
     margin: 12px;
@@ -268,7 +252,22 @@ body {
 
 
 @media (min-width:300px) and (max-width: 800px) {
-  .primeiro_tech > h2 {
-    font-size: 16px;
+
+  .primeiro_tech > h1 {
+    font-size: 18px;
+  }
+
+  .segunda_tech > h2{
+    font-size: 20px;
+  }
+
+  .terceira_tech > h2 {
+    font-size: 20px;
+  }
+
+  .lista_tech {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
   }
 }
